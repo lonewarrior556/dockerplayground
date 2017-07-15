@@ -20,6 +20,6 @@ To run:
 $ docker-compose up
 
 ------
-fserver is build from scrarch using ubuntu 16.04
-postgre = mdillon/postgis
-nginx = nginx
+fserver is build from scrarch using ubuntu 16.04<br>
+postgre = mdillon/postgis<br>
+nginx = nginx<br>
