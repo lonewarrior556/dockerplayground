@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  postgis:
+    image: mdillon/postgis
+    environment:
+      POSTGRES_PASSWORD: docker
+
+  web1:
+    build: ./fserverbuild
+    links:
+      - "postgis:pgis"
+
+  web2:
+    build: ./fserverbuild
+    links:
+      - "postgis:pgis"
+
+  nginx:
+     build: ./nginx-docker
+     ports:
+       - "80:80"
+     links: 
+       - "web1:web1"
+       - "web2:web2"
+
+     
+    
