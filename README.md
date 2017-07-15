@@ -3,7 +3,7 @@ Repo contains a simple configruation that stands up a postgres + 2 featureserver
 4 constiners in all
 
 [ container ]*
-
+<pre>
 ------------------------------
 ---------[ postgres ] -------- 
 -----------/------\ ----------
@@ -12,7 +12,7 @@ Repo contains a simple configruation that stands up a postgres + 2 featureserver
 ----------[ nginx ]-----------
 -------------||---------------
 ----------browser:80----------
-
+</pre>
 
 requires docker to be installed. 
 
